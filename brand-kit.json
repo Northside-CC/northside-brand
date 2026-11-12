@@ -1,0 +1,235 @@
+{
+  "$comment": "Single source of truth for Northside Christian Church brand data. All asset paths are relative to the repo root. Values come from the Northside Brand Guidelines (2023-11-07) unless a 'source' field says otherwise. Fields marked needs_review have not been confirmed by the Digital Ministry team.",
+  "version": "0.1.0",
+  "updated": "2026-11-12",
+  "brand": {
+    "name": "Northside Christian Church",
+    "short_name": "Northside",
+    "mission": "Connecting People to Jesus",
+    "location": "New Albany, IN",
+    "website": "https://www.mynorthside.com",
+    "repository": "Northside-CC/northside-brand",
+    "architecture": "Branded house, not a house of brands. Ministries follow the Northside Christian Church pattern. Kidside and NSM are the only exceptions."
+  },
+  "naming": {
+    "rules": [
+      "Use 'Northside Christian Church' on first reference. Never drop 'Christian' on first reference.",
+      "Never write 'Northside Church'.",
+      "'Northside' alone is fine after the first mention."
+    ],
+    "abbreviations": {
+      "VAN": "Volunteer Appreciation Night",
+      "NSM": "Northside Student Ministry",
+      "YA": "Young Adults"
+    }
+  },
+  "colors": {
+    "source": "Northside Brand Guidelines 2023-11-07, Colors section",
+    "needs_review": "The primary/secondary grouping could not be read reliably from the PDF. Green NCC is confirmed as the primary brand color; confirm how the other five are grouped.",
+    "primary": {
+      "name": "Green NCC",
+      "hex": "#0E8291",
+      "rgb": [14, 130, 145],
+      "cmyk": [82, 28, 36, 11],
+      "pantone": "3145 C",
+      "text_on": "#FFFFFF",
+      "usage": "Main brand color. Links, buttons, and key accents."
+    },
+    "palette": [
+      {
+        "name": "Yellow NCC",
+        "hex": "#FF9703",
+        "rgb": [255, 151, 3],
+        "cmyk": [0, 49, 93, 0],
+        "pantone": "1375 C",
+        "text_on": "#1D1D1D"
+      },
+      {
+        "name": "Dark Coral",
+        "hex": "#CF6648",
+        "rgb": [207, 102, 72],
+        "cmyk": [15, 69, 72, 4],
+        "pantone": null,
+        "pantone_note": "The guidelines PDF lists 2706 C, which is the Light Purple value. Treat as unconfirmed.",
+        "text_on": "#1D1D1D",
+        "text_on_note": "White reaches only 3.7:1 on Dark Coral. Use white for large or bold text only."
+      },
+      {
+        "name": "Light Purple",
+        "hex": "#C5CDE8",
+        "rgb": [197, 205, 232],
+        "cmyk": [26, 17, 1, 0],
+        "pantone": "2706 C",
+        "text_on": "#1D1D1D"
+      },
+      {
+        "name": "Cream",
+        "hex": "#FAF1E8",
+        "rgb": [250, 241, 232],
+        "cmyk": [2, 6, 10, 0],
+        "pantone": "P 1-9 C",
+        "text_on": "#1D1D1D"
+      },
+      {
+        "name": "Light Brown",
+        "hex": "#A08A86",
+        "rgb": [160, 138, 134],
+        "cmyk": [34, 40, 37, 17],
+        "pantone": "408 C",
+        "text_on": "#1D1D1D"
+      }
+    ],
+    "gradients": {
+      "note": "The guidelines define four gradients (Gradient #1 to #4). Their color stops are not recorded here yet. See the guidelines PDF.",
+      "needs_review": true
+    },
+    "web_neutrals": {
+      "source": "mynorthside.com theme, not the guidelines PDF",
+      "scale": [
+        { "name": "Darkest", "hex": "#1D1D1D", "usage": "Body text and dark backgrounds" },
+        { "name": "Dark", "hex": "#334155" },
+        { "name": "Medium", "hex": "#64748B" },
+        { "name": "Light", "hex": "#EDEDF2" },
+        { "name": "Lightest", "hex": "#F3F3F3" },
+        { "name": "White", "hex": "#FFFFFF" }
+      ]
+    },
+    "semantic": {
+      "source": "mynorthside.com theme, not the guidelines PDF",
+      "success": "#059669",
+      "info": "#0284C7",
+      "warning": "#FFC107",
+      "danger": "#CF6648"
+    }
+  },
+  "typography": {
+    "source": "Northside Brand Guidelines 2023-11-07, Typography section",
+    "licensing": "Gotham, Dharma Gothic, Helvetica Neue, and Proxima Nova are commercial typefaces. Font files are not included in this repo and must not be added to a public repo.",
+    "families": [
+      {
+        "name": "Gotham",
+        "role": "Main logo type. Body text, long intertitles, and informational text.",
+        "weights": ["Book", "Medium", "Bold"],
+        "css_stack": "Gotham, 'Gotham SSm', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "notes": "Better suited to web than print."
+      },
+      {
+        "name": "Dharma Gothic",
+        "role": "Big headlines.",
+        "weights": ["Regular", "Bold", "ExBold", "Heavy"],
+        "css_stack": "'Dharma Gothic E', 'dharma-gothic-e', Impact, 'Arial Narrow', sans-serif",
+        "notes": "Expressive and imposing. Needs height to read well. Avoid it where space is tight."
+      },
+      {
+        "name": "Helvetica Neue / Helvetica Now",
+        "role": "Complementary type for headlines and on-screen content.",
+        "weights": ["Bold", "Black", "Heavy Extended"],
+        "css_stack": "'Helvetica Neue', 'Helvetica Now', Helvetica, Arial, sans-serif",
+        "notes": "Use the extended version with care. It does not work well for long sentences."
+      }
+    ],
+    "web": {
+      "name": "Proxima Nova",
+      "source": "Observed on mynorthside.com (Adobe Fonts). Not listed in the guidelines PDF.",
+      "needs_review": "Confirm whether Proxima Nova is the approved web typeface or a stand-in for Gotham."
+    },
+    "rules": [
+      "Avoid setting long text in all caps or italics. Save them for short titles, subtitles, and key ideas.",
+      "Avoid underlines, except for short titles set large.",
+      "Set line spacing about 20% larger than the font size (14px text gets 16.8px line spacing).",
+      "Do not use full justification, especially on screens.",
+      "Left-align text and do not break words with hyphens.",
+      "Keep paragraphs between 45 and 75 words.",
+      "Serif type suits long printed pieces. Sans serif suits screens."
+    ]
+  },
+  "logos": {
+    "source": "Vector artwork taken from the logo published on mynorthside.com. The dark variant and the logo mark were derived from that file.",
+    "needs_review": "Replace with the official logo files from the Digital Ministry shared drive, and add PNG exports.",
+    "preferred": "full_logo",
+    "full_logo": {
+      "description": "Logo symbol plus the Northside Christian Church logo type. Use this in most contexts.",
+      "light": "logos/full-logo/northside-full-logo-light.svg",
+      "dark": "logos/full-logo/northside-full-logo-dark.svg"
+    },
+    "logo_mark": {
+      "description": "Logo symbol only (the N in a circle). For avatars, favicons, and tight spaces.",
+      "light": "logos/logo-mark/northside-logo-mark-light.svg",
+      "dark": "logos/logo-mark/northside-logo-mark-dark.svg"
+    },
+    "variants": {
+      "light": "Light artwork for dark or colored backgrounds.",
+      "dark": "Dark artwork for white or cream backgrounds."
+    },
+    "clearspace": "Half the height of the logo on every side. No graphic elements inside this zone.",
+    "minimum_size": "Full logo: 1 inch wide.",
+    "donts": [
+      "Do not use the Northside logo type by itself without permission.",
+      "Do not change the logo type.",
+      "Do not warp, stretch, skew, or slant the logo.",
+      "Do not add a stroke to the logo.",
+      "Do not add embellishments such as gradients or drop shadows.",
+      "Do not place the logo on complex or patterned backgrounds."
+    ]
+  },
+  "sub_brands": {
+    "rule": "Every ministry sub-brand follows the same structure as the primary Northside Christian Church logo. Ministries do not exist apart from Northside.",
+    "exceptions": [
+      { "name": "Kidside", "note": "Has its own brand guidelines." },
+      { "name": "NSM", "full_name": "Northside Student Ministry", "note": "Has its own brand guidelines." }
+    ],
+    "assets": "Not included in this repo yet.",
+    "needs_review": true
+  },
+  "brand_elements": {
+    "waves": "Northside Waves: a line-based graphic used in the corners of a piece to balance it and add rhythm.",
+    "noise": "Add 12% to 15% noise (uniform distribution, monochrome) to some photos and backgrounds for contrast.",
+    "photo_containers": "Circular image containers may be used in advertising and internal pieces.",
+    "textures": "Textured paper, scratches, and torn edges are allowed in moderation. Never at the cost of legibility.",
+    "assets": "Not included in this repo yet."
+  },
+  "photography": {
+    "shooting": [
+      "Focus on faces.",
+      "Shoot the crowd more than the stage. Lobby shots are gold.",
+      "Capture natural, warm moments. Avoid staged shots.",
+      "Frame on the rule of thirds and leave empty space for text.",
+      "Show diversity in age, gender, and ethnicity.",
+      "Get wide, medium, and tight shots.",
+      "Show people in action.",
+      "Shoot through the crowd, not above it.",
+      "Use natural light. Avoid flash.",
+      "Be present without becoming part of the show.",
+      "Use a shallow depth of field."
+    ],
+    "editing": [
+      "Mildly crush the blacks for depth.",
+      "Lean toward warmer tones.",
+      "Saturate for richness, not just brightness.",
+      "Get skin tones right first.",
+      "Do not over-process. Avoid trendy looks that date quickly."
+    ]
+  },
+  "voice": {
+    "source": "Northside staff writing standards, not the guidelines PDF",
+    "summary": "Jesus-centered, simple, and respectful. Write the way a warm, clear staff member would speak, not like a corporate memo.",
+    "audience": "Assume readers include people who are new to faith.",
+    "tone": ["warm", "clear", "simple", "respectful", "Jesus-centered"],
+    "avoid": ["corporate or memo-style language", "insider church jargon without explanation", "empty filler phrases"],
+    "scripture": "Quote from the NIV or NLT and always give the reference. Never guess at a verse's wording."
+  },
+  "usage": {
+    "do": [
+      "Use the full logo in most contexts.",
+      "Use Green NCC as the lead color.",
+      "Keep the clear space around the logo.",
+      "Write 'Northside Christian Church' on first reference."
+    ],
+    "dont": [
+      "Do not create a separate logo for a ministry.",
+      "Do not use the logo type without the symbol.",
+      "Do not recolor, stretch, outline, or add effects to the logo.",
+      "Do not write 'Northside Church'."
+    ]
+  }
+}

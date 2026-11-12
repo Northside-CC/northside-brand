@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northside Brand Kit</title>
+  <meta name="description" content="Brand assets, colors, typography, and voice for Northside Christian Church. Built for staff, volunteers, and AI tools.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="./"><img src="logos/full-logo/northside-full-logo-light.svg" alt="Northside Christian Church"></a>
+    <nav>
+      <a class="btn solid" href="brand-review.html">Brand Review</a>
+      <a class="btn" data-repo="home" href="#">GitHub Repo</a>
+      <a class="btn" data-repo="zip" href="#">Download ZIP</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">mynorthside.com / brand</span>
+    <h1>Northside <em>Brand</em> Kit</h1>
+    <p>This repository is the single source of truth for Northside Christian Church's brand assets, colors, typography, and voice. It is built so staff, volunteers, and AI tools can all produce work that looks and sounds like Northside.</p>
+  </div>
+</div>
+
+<div class="agent">
+  <div class="wrap">
+    <span class="eyebrow">Agent instructions</span>
+    <p>Start with <code>brand-kit.json</code>. It holds all structured brand data in one machine-readable file. For voice, naming, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repo root. When producing branded output, use <strong>Green NCC (#0E8291)</strong> as the lead color, write <strong>Northside Christian Church</strong> on first reference (never "Northside Church"), and follow the <code>voice</code> object. Logo files are SVGs in <code>logos/</code>. Prefer the full logo in most contexts. Fields marked <code>needs_review</code> are not confirmed yet, so check with the Digital Ministry team before relying on them.</p>
+  </div>
+</div>
+
+<main>
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Repository</span>
+      <h2>Key Files</h2>
+      <p class="lede">Everything here is plain text or SVG, so it is easy to read, link to, and update.</p>
+      <div class="cards">
+        <a class="card" href="brand-kit.json">
+          <span class="path">brand-kit.json</span>
+          <h4>Brand Kit</h4>
+          <p>Machine-readable brand data. Colors, typography, logo paths, naming rules, voice, and usage dos and don'ts. Start here.</p>
+          <span class="tag">Primary reference</span>
+        </a>
+        <a class="card" href="brand-guidelines.md">
+          <span class="path">brand-guidelines.md</span>
+          <h4>Brand Guidelines</h4>
+          <p>A short, readable version of the rules: our name, voice, logo usage, clear space, colors, type tips, photography, and video.</p>
+          <span class="tag">Voice + usage</span>
+        </a>
+        <a class="card" href="brand-review.html#logos">
+          <span class="path">logos/</span>
+          <h4>Logo Files</h4>
+          <p>SVG files for the full logo (symbol + logo type) and the logo mark (symbol only). Each comes in light and dark variants.</p>
+          <span class="tag">Assets</span>
+        </a>
+        <a class="card" href="brand-review.html">
+          <span class="path">brand-review.html</span>
+          <h4>Brand Review</h4>
+          <p>A visual page showing every color, logo, and typeface in the kit. Made for people, not machines. Click any color to copy its hex code.</p>
+          <span class="tag">Visual reference</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wash">
+    <div class="wrap">
+      <span class="eyebrow">brand-kit.json</span>
+      <h2>JSON Schema</h2>
+      <p class="lede">What each top-level key holds.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Key</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>brand</code></td><td>Church name, mission ("Connecting People to Jesus"), location, website, and brand architecture (branded house).</td></tr>
+            <tr><td><code>naming</code></td><td>How to write our name, plus approved abbreviations (VAN, NSM, YA).</td></tr>
+            <tr><td><code>colors.primary</code></td><td>Green NCC (#0E8291), the main brand color. Includes RGB, CMYK, Pantone, and a text_on value.</td></tr>
+            <tr><td><code>colors.palette</code></td><td>Yellow NCC, Dark Coral, Light Purple, Cream, and Light Brown. Each with RGB, CMYK, Pantone, and text_on.</td></tr>
+            <tr><td><code>colors.web_neutrals</code></td><td>Six-step neutral scale used on mynorthside.com, from #1D1D1D to white.</td></tr>
+            <tr><td><code>colors.semantic</code></td><td>Success, info, warning, and danger colors used on mynorthside.com.</td></tr>
+            <tr><td><code>typography</code></td><td>Gotham, Dharma Gothic, and Helvetica Neue / Now with roles, weights, CSS fallback stacks, and type rules. Font files are licensed and not included.</td></tr>
+            <tr><td><code>logos</code></td><td>Paths for full_logo and logo_mark in light and dark variants. Includes the clear space rule, minimum size, and don'ts.</td></tr>
+            <tr><td><code>sub_brands</code></td><td>The branded-house rule and its two exceptions, Kidside and NSM.</td></tr>
+            <tr><td><code>brand_elements</code></td><td>Northside Waves, noise, photo containers, and textures, each with usage guidance.</td></tr>
+            <tr><td><code>photography</code></td><td>Shooting and editing guidance.</td></tr>
+            <tr><td><code>voice</code></td><td>Voice summary, audience, tone words, things to avoid, and Scripture quoting rules.</td></tr>
+            <tr><td><code>usage</code></td><td>Dos and don'ts for applying the brand.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Colors</span>
+      <h2>Brand Colors</h2>
+      <p class="lede">All color values and text-on recommendations are in <code>brand-kit.json</code> under the <code>colors</code> key. Click a color to copy its hex code.</p>
+      <div class="swatches" data-render="colors"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Northside Christian Church &middot; New Albany, IN &middot; <a href="https://www.mynorthside.com">mynorthside.com</a> &middot; Maintained by the Digital Ministry team.</div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
