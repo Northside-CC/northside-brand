@@ -1,6 +1,6 @@
 {
-  "$comment": "Single source of truth for Northside Christian Church brand data. All asset paths are relative to the repo root. Values come from the Northside Brand Guidelines (2023-11-07) unless a 'source' field says otherwise. Fields marked needs_review have not been confirmed by the Digital Ministry team.",
-  "version": "0.2.0",
+  "$comment": "Single source of truth for Northside Christian Church brand data. All asset paths are relative to the repo root. Values come from the Northside Brand Guidelines (2023-11-07) unless a 'source' field says otherwise. Fields marked needs_review or missing have not been confirmed by the Digital Ministry team.",
+  "version": "0.3.0",
   "updated": "2026-11-12",
   "brand": {
     "name": "Northside Christian Church",
@@ -9,18 +9,20 @@
     "location": "New Albany, IN",
     "website": "https://www.mynorthside.com",
     "repository": "Northside-CC/northside-brand",
-    "architecture": "Branded house, not a house of brands. Ministries follow the Northside Christian Church pattern. Kidside, NSM, and Young Adults have their own brand guides."
+    "architecture": "Branded house, not a house of brands. Ministries follow the Northside Christian Church pattern. Kidside, NSM, and Northside Young Adults have their own brand guides."
   },
   "naming": {
     "rules": [
       "Use 'Northside Christian Church' on first reference. Never drop 'Christian' on first reference.",
       "Never write 'Northside Church'.",
-      "'Northside' alone is fine after the first mention."
+      "'Northside' alone is fine after the first mention.",
+      "Northside Young Adults on first reference, then Young Adults or YA.",
+      "Spell Kidside with a lowercase s. 'KidSide' is outdated."
     ],
     "abbreviations": {
       "VAN": "Volunteer Appreciation Night",
       "NSM": "Northside Student Ministry",
-      "YA": "Young Adults"
+      "YA": "Young Adults (full name: Northside Young Adults)"
     }
   },
   "colors": {
@@ -133,13 +135,56 @@
           4
         ],
         "pantone": null,
-        "pantone_note": "The guidelines PDF prints 2706 C for Dark Coral, the same value as Light Purple. This looks like a typo in the PDF. Treat as unconfirmed.",
+        "pantone_tcx": "18-649 TCX",
+        "pantone_note": "18-649 TCX is a Pantone Fashion, Home + Interiors (textile) code, not a Coated (C) code like the other colors. Ask the print vendor to match from the hex or CMYK, or add a C equivalent here when one is confirmed.",
         "text_on": "#1D1D1D",
         "text_on_note": "White reaches only 3.7:1 on Dark Coral. Use white for large or bold text only."
       }
     ],
     "gradients": {
-      "note": "The guidelines show four gradients (Gradient #1 to #4). They are soft, free-form blends of the brand colors with no fixed color stops, so they are not recorded as values here. See page 20 of the guidelines PDF."
+      "source": "Gradient images from the NCC branding package (Gradients folder). The guidelines PDF shows four; the package includes five approved for use here.",
+      "note": "Soft, free-form blends with no fixed color stops. Use the image files rather than rebuilding them in CSS.",
+      "files": [
+        "brand-elements/gradients/northside-gradient-1.jpg",
+        "brand-elements/gradients/northside-gradient-2.jpg",
+        "brand-elements/gradients/northside-gradient-3.jpg",
+        "brand-elements/gradients/northside-gradient-4.jpg",
+        "brand-elements/gradients/northside-gradient-5.jpg"
+      ],
+      "size": "1920x1080 JPG",
+      "colors": [
+        {
+          "hex": "#F5DDC8",
+          "name": "Pale Peach",
+          "found_in": "Faint highlight in gradient 2"
+        },
+        {
+          "hex": "#A1DCEC",
+          "name": "Sky Blue",
+          "found_in": "Gradient 3"
+        },
+        {
+          "hex": "#6C5D5C",
+          "name": "Dark Taupe",
+          "found_in": "Gradients 1, 2, and 5"
+        },
+        {
+          "hex": "#C38369",
+          "name": "Clay",
+          "found_in": "Gradients 1 to 4"
+        },
+        {
+          "hex": "#F1B48A",
+          "name": "Light Apricot",
+          "found_in": "Gradients 1, 2, and 5"
+        },
+        {
+          "hex": "#F1572B",
+          "name": "Bright Coral",
+          "found_in": "Gradient 5"
+        }
+      ],
+      "colors_note": "These colors appear on the one-page NCC brand guide and were confirmed by sampling the gradient files. They are gradient colors only, not general-use palette colors. Names are descriptive labels, not official."
     },
     "web_neutrals": {
       "source": "mynorthside.com theme, not the guidelines PDF",
@@ -189,7 +234,8 @@
         "weights": [
           "Book",
           "Medium",
-          "Bold"
+          "Bold",
+          "Black"
         ],
         "css_stack": "Gotham, 'Gotham SSm', 'Helvetica Neue', Helvetica, Arial, sans-serif",
         "notes": "Better suited to web than print."
@@ -216,12 +262,17 @@
         ],
         "css_stack": "'Helvetica Neue', 'Helvetica Now', Helvetica, Arial, sans-serif",
         "notes": "Use the extended version with care. It does not work well for long sentences."
+      },
+      {
+        "name": "Proxima Nova",
+        "role": "Approved web typeface. The web substitute for Gotham on mynorthside.com and other web pages.",
+        "css_stack": "'proxima-nova', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "notes": "Served through Adobe Fonts. Use Gotham in print and design files."
       }
     ],
     "web": {
       "name": "Proxima Nova",
-      "source": "Observed on mynorthside.com (Adobe Fonts). Not listed in the guidelines PDF.",
-      "needs_review": "Confirm whether Proxima Nova is the approved web typeface or a stand-in for Gotham."
+      "source": "Approved by the Digital Ministry team (2026-11-12). Used on mynorthside.com through Adobe Fonts."
     },
     "rules": [
       "Avoid setting long text in all caps or italics. Save them for short titles, subtitles, and key ideas.",
@@ -234,7 +285,7 @@
     ]
   },
   "logos": {
-    "source": "Official logo files from the Digital Ministry shared drive (NCC Branding Assets / Logos), converted from the vector PDFs to SVG.",
+    "source": "Official logo files from the Digital Ministry shared drive (NCC Branding Assets / Logos). Northside logos were converted from the vector PDFs to SVG. Some sub-brand logos are PNG only.",
     "preferred": "full_logo",
     "full_logo": {
       "description": "Logo symbol plus the Northside Christian Church logo type, horizontal. Use this in most contexts.",
@@ -261,15 +312,27 @@
       "dark": "Dark artwork (#373A36) for white or cream backgrounds."
     },
     "clearspace": "Half the height of the logo on every side. No graphic elements inside this zone.",
-    "minimum_size": "Full logo: 1 inch wide.",
+    "minimum_size": "Full logo: 1 inch wide (about 96 px on screen). Simple logo: 0.75 inch wide (24 px tall on screen). Logo mark: 0.375 inch wide (16 px on screen).",
     "donts": [
-      "Do not use the Northside logo type by itself without permission.",
+      "Do not use the Northside logo type, or any part of a logo, by itself without approval from the Digital Ministry team.",
       "Do not change the logo type.",
       "Do not warp, stretch, skew, or slant the logo.",
       "Do not add a stroke to the logo.",
       "Do not add embellishments such as gradients or drop shadows.",
       "Do not place the logo on complex or patterned backgrounds."
-    ]
+    ],
+    "minimum_size_source": "Simple logo and logo mark minimums were set by the Digital Ministry team, not the guidelines PDF.",
+    "approver": "Digital Ministry team approves any logo use outside these rules, for Northside and all sub-brands.",
+    "alt_text": {
+      "full_logo": "Northside Christian Church logo",
+      "full_logo_stacked": "Northside Christian Church logo",
+      "simple_logo": "Northside Christian Church logo",
+      "logo_mark": "Northside Christian Church logo mark",
+      "kidside": "Kidside logo",
+      "nsm": "Northside Student Ministry logo",
+      "young_adults": "Northside Young Adults logo",
+      "rule": "Use the brand name, not a description of the artwork. If a logo sits next to text that already says the name, use empty alt text (alt=\"\"). For photos, describe what is happening in one short sentence. For decorative gradients, waves, and textures, use empty alt text."
+    }
   },
   "sub_brands": {
     "rule": "We are a branded house. Ministries do not exist apart from Northside, and ministry logos follow the Northside Christian Church pattern unless the ministry has its own brand guide below.",
@@ -278,7 +341,7 @@
       "name": "Kidside",
       "full_name": "Kidside",
       "audience": "Children's ministry",
-      "source": "NCC Kidside Brand Guidelines (2023). The guide spells the name KidSide.",
+      "source": "NCC Kidside Brand Guidelines (2023). The guide spells the name KidSide; the official spelling is Kidside.",
       "stage": "#030040",
       "colors": [
         {
@@ -308,7 +371,8 @@
           ],
           "group": "main",
           "text_on": "#1D1D1D",
-          "note": "The guide prints FF9703 for this color, which is Yellow NCC. That is a typo. This value was read from the swatch artwork in the guide. Confirm it."
+          "note": "The guide prints FF9703 (Yellow NCC), which is a typo. #59BFD1 was read from the swatch artwork and confirmed by the Digital Ministry team (2026-11-12).",
+          "cmyk_missing": "No CMYK value yet. Check with design before print."
         },
         {
           "name": "Grey 1",
@@ -353,7 +417,8 @@
             66
           ],
           "group": "secondary",
-          "text_on": "#1D1D1D"
+          "text_on": "#1D1D1D",
+          "cmyk_missing": "No CMYK value yet. Check with design before print."
         },
         {
           "name": "Green 2",
@@ -438,7 +503,7 @@
           "Do not add a stroke to the logo.",
           "Do not add gradients, drop shadows, or other effects.",
           "Do not place the logo on complex or patterned backgrounds.",
-          "Do not use parts of the logo on their own without approval from the Communications Team."
+          "Do not use parts of the logo on their own without approval from the Digital Ministry team."
         ]
       },
       "elements": "Kidside color waves: flowing shapes in the brand colors that surround the logo, balance a layout, or hold photos."
@@ -578,9 +643,11 @@
           "Do not change the logo type.",
           "Do not warp, stretch, skew, or slant the logo.",
           "Do not add a stroke to the logo.",
-          "Do not place the logo on complex or patterned backgrounds."
+          "Do not place the logo on complex or patterned backgrounds.",
+          "Do not use parts of the logo on their own without approval from the Digital Ministry team."
         ]
-      }
+      },
+      "logo_formats_note": "NSM logos are PNG only. SVG versions are not available yet."
     },
     "young_adults": {
       "name": "YA",
@@ -708,7 +775,15 @@
           "on": "light"
         }
       ],
-      "logos_needs_review": "Only the profile image was available as a usable file. The YA guide shows a horizontal logo, a stacked logo, and a logo mark in light and dark, but the source files were not in the shared folder.",
+      "logos_missing": "Only the orange profile image is here. The horizontal logo, stacked logo, and logo mark (light and dark) are being added by the Digital Ministry team. Until then, request YA logos from Digital rather than recreating them.",
+      "logos_planned": [
+        "sub-brands/young-adults/ya-logo-horizontal-dark.png",
+        "sub-brands/young-adults/ya-logo-horizontal-light.png",
+        "sub-brands/young-adults/ya-logo-stacked-dark.png",
+        "sub-brands/young-adults/ya-logo-stacked-light.png",
+        "sub-brands/young-adults/ya-logo-mark-dark.png",
+        "sub-brands/young-adults/ya-logo-mark-light.png"
+      ],
       "logo_rules": {
         "clearspace": "Half the height of the logo on every side.",
         "minimum_size": "Full logo: 1 inch wide.",
@@ -716,17 +791,26 @@
           "Do not change the logo type.",
           "Do not warp, stretch, skew, or slant the logo.",
           "Do not add a stroke to the logo.",
-          "Do not place the logo on complex or patterned backgrounds."
+          "Do not place the logo on complex or patterned backgrounds.",
+          "Do not use parts of the logo on their own without approval from the Digital Ministry team."
         ]
       }
     }
   },
   "brand_elements": {
-    "waves": "Northside Waves: a line-based graphic used in the corners of a piece to balance it and add rhythm.",
+    "waves": {
+      "description": "Northside Waves: a line-based graphic used in the corners of a piece to balance it and add rhythm.",
+      "file": "brand-elements/waves/northside-waves.png",
+      "format": "4000 px wide PNG, dark lines on a transparent background"
+    },
     "noise": "Add 12% to 15% noise (uniform distribution, monochrome) to some photos and backgrounds for contrast.",
     "photo_containers": "Circular image containers may be used in advertising and internal pieces.",
-    "textures": "Textured paper, scratches, and torn edges are allowed in moderation. Never at the cost of legibility.",
-    "assets": "Not included in this repo yet."
+    "textures": {
+      "description": "Textured paper, scratches, and torn edges are allowed in moderation. Never at the cost of legibility.",
+      "file": "brand-elements/textures/northside-paper-texture.jpg",
+      "format": "2400 px wide JPG"
+    },
+    "assets": "Web-sized exports are in brand-elements/. Full-size and layered originals (AI, EPS, PSD) stay on the Digital Ministry shared drive."
   },
   "photography": {
     "shooting": [
@@ -772,8 +856,7 @@
     "do": [
       "Use the full logo in most contexts.",
       "Use Green NCC as the lead color.",
-      "Keep the clear space around the logo.",
-      "Write 'Northside Christian Church' on first reference."
+      "Keep the clear space around the logo."
     ],
     "dont": [
       "Do not create a new logo for a ministry. Use the Northside pattern or an approved sub-brand.",

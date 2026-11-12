@@ -14,6 +14,8 @@ Our mission: **Connecting People to Jesus.**
 - Never write "Northside Church."
 - "Northside" alone is fine after the first mention.
 - VAN is Volunteer Appreciation Night. NSM is Northside Student Ministry. YA is Young Adults.
+- Write **Northside Young Adults** on first reference, then Young Adults or YA.
+- Spell **Kidside** with a lowercase s. "KidSide" is outdated.
 
 ## Voice
 
@@ -24,7 +26,7 @@ Our mission: **Connecting People to Jesus.**
 
 ## Logo
 
-These are the official logo files, in `logos/`:
+These are the official Northside logo files, as SVGs in `logos/`:
 
 | Version | When to use | Files |
 | --- | --- | --- |
@@ -37,11 +39,23 @@ Each comes in **light** (white artwork, for dark or colored backgrounds) and **d
 
 **Clear space:** keep half the logo's height clear on every side.
 
-**Minimum size:** the full logo should never be smaller than 1 inch wide.
+**Minimum size:**
+
+| Version | Print | Screen |
+| --- | --- | --- |
+| Full logo | 1 inch wide | 96 px wide |
+| Simple logo | 0.75 inch wide | 24 px tall |
+| Logo mark | 0.375 inch wide | 16 px |
+
+The simple logo and logo mark minimums were set by the Digital Ministry team.
+
+**Approval:** the Digital Ministry team approves any logo use outside these rules, for Northside and all sub-brands.
+
+**Alt text:** use the brand name, such as "Northside Christian Church logo." If the name is already in the text next to the logo, use empty alt text. Use empty alt text for gradients, waves, and textures too. Exact strings are under `logos.alt_text` in `brand-kit.json`.
 
 **Do not:**
 
-- Use the logo type by itself without permission.
+- Use the logo type, or any part of a logo, by itself without approval from the Digital Ministry team.
 - Change the logo type.
 - Warp, stretch, skew, or slant the logo.
 - Add a stroke.
@@ -57,19 +71,35 @@ Each comes in **light** (white artwork, for dark or colored backgrounds) and **d
 | Cream | Secondary | `#FAF1E8` | 250, 241, 232 | 2 / 6 / 10 / 0 | P 1-9 C |
 | Light Brown | Secondary | `#A08A86` | 160, 138, 134 | 34 / 40 / 37 / 17 | 408 C |
 | Light Purple | Secondary | `#C5CDE8` | 197, 205, 232 | 26 / 17 / 1 / 0 | 2706 C |
-| Dark Coral | Secondary | `#CF6648` | 207, 102, 72 | 15 / 69 / 72 / 4 | unconfirmed |
+| Dark Coral | Secondary | `#CF6648` | 207, 102, 72 | 15 / 69 / 72 / 4 | 18-649 TCX* |
 
 Text on color: use white on Green NCC. Use dark text (`#1D1D1D`) on the other five. White on Dark Coral is fine for large or bold text only.
 
-The guidelines also show four gradients. They are soft blends of the brand colors with no fixed values. See page 20 of the guidelines PDF.
+\*18-649 TCX is a Pantone textile code, not a Coated (C) code like the others. For print, have the vendor match from the hex or CMYK.
+
+### Gradients
+
+Five gradients are in `brand-elements/gradients/` (1920x1080 JPG). They are soft blends with no fixed values, so use the image files rather than rebuilding them.
+
+These colors appear in the gradients. They are for gradients only, not general use, and the names are descriptive labels:
+
+| Name | Hex | Found in |
+| --- | --- | --- |
+| Pale Peach | `#F5DDC8` | Gradient 2 (faint highlight) |
+| Sky Blue | `#A1DCEC` | Gradient 3 |
+| Dark Taupe | `#6C5D5C` | Gradients 1, 2, 5 |
+| Clay | `#C38369` | Gradients 1 to 4 |
+| Light Apricot | `#F1B48A` | Gradients 1, 2, 5 |
+| Bright Coral | `#F1572B` | Gradient 5 |
 
 ## Typography
 
 | Typeface | Role | Weights |
 | --- | --- | --- |
-| Gotham | Logo type, body text, informational text | Book, Medium, Bold |
+| Gotham | Logo type, body text, informational text | Book, Medium, Bold, Black |
 | Dharma Gothic | Big headlines | Regular, Bold, ExBold, Heavy |
 | Helvetica Neue / Now | Complementary headlines, on-screen content | Bold, Black, Heavy Extended |
+| Proxima Nova | Approved web typeface, the web substitute for Gotham | Served through Adobe Fonts |
 
 These are licensed fonts. The files are not in this repo.
 
@@ -87,14 +117,14 @@ Tips:
 
 We are a "branded house," not a "house of brands." Ministries do not exist apart from Northside, so ministry logos follow the main Northside Christian Church pattern.
 
-Three ministries have their own brand guides. Their logos are in `sub-brands/` and their full details are under `sub_brands` in `brand-kit.json`. All three use Gotham (Book, Medium, Bold, Black) for body text and follow the main photography and video guidance. All three share the same logo basics: half-height clear space, a 1 inch minimum for the full logo, and no stretching, strokes, or busy backgrounds.
+Three ministries have their own brand guides: Kidside, NSM, and Northside Young Adults. Their logos are in `sub-brands/` and their full details are under `sub_brands` in `brand-kit.json`. All three use Gotham (Book, Medium, Bold, Black) for body text and follow the main photography and video guidance. All three share the same logo basics: half-height clear space, a 1 inch minimum for the full logo, no stretching, strokes, or busy backgrounds, and no using parts of a logo on their own without approval from the Digital Ministry team.
 
 ### Kidside
 
 | Color | Group | Hex |
 | --- | --- | --- |
 | Blue Kidside | Main | `#030040` |
-| Sea Kidside | Main | `#59BFD1` (confirm, see below) |
+| Sea Kidside | Main | `#59BFD1` |
 | Grey 1 | Secondary | `#DADADA` |
 | Orange | Secondary | `#F05729` |
 | Green 1 | Secondary | `#96D142` |
@@ -102,9 +132,9 @@ Three ministries have their own brand guides. Their logos are in `sub-brands/` a
 
 - **Type:** Grobold (Bold only) for the logo type. Gotham for everything else.
 - **Logos:** `sub-brands/kidside/`. Full color, navy, black, and white versions, plus color wordmarks.
-- **Extra rule:** do not use parts of the logo on their own without approval from the Communications Team.
 - **Graphic element:** Kidside color waves, flowing shapes in the brand colors.
-- The Kidside guide prints the wrong hex for Sea Kidside. The value above was read from the swatch in the guide.
+- The Kidside guide prints the wrong hex for Sea Kidside. `#59BFD1` was read from the swatch and confirmed by the Digital Ministry team.
+- Sea Kidside and Green 1 have no CMYK values yet. Check with design before print.
 
 ### NSM (Northside Student Ministry)
 
@@ -117,9 +147,9 @@ Three ministries have their own brand guides. Their logos are in `sub-brands/` a
 | Pink NSM | Secondary | `#F291E2` |
 
 - **Type:** Bree (Regular, Semibold, Bold, Extrabold) for headlines and logo type. Set headlines in all caps, or title case if a long headline gets hard to read. Gotham for body text.
-- **Logos:** `sub-brands/nsm/`. Full name, horizontal, stacked, and logo mark, each in dark and light.
+- **Logos:** `sub-brands/nsm/`. Full name, horizontal, stacked, and logo mark, each in dark and light. PNG only for now.
 
-### YA (Young Adults)
+### YA (Northside Young Adults)
 
 | Rank | Hex |
 | --- | --- |
@@ -128,15 +158,17 @@ Three ministries have their own brand guides. Their logos are in `sub-brands/` a
 | Tertiary | `#01B4FE` (sky), `#FFB80A` (yellow) |
 
 - **Type:** Grako (Regular, Tall) for headlines and logo type. Set headlines in all caps, or title case if a long headline gets hard to read. Gotham for body text.
-- **Logos:** `sub-brands/young-adults/`. Only the orange profile image is here so far. The full YA logo files still need to be added.
+- **Logos:** `sub-brands/young-adults/`. Only the orange profile image is here so far. The horizontal, stacked, and logo mark files are being added. Until then, request YA logos from the Digital Ministry team instead of recreating them.
 - The YA guide does not name its colors. The names in `brand-kit.json` are descriptive labels.
 
 ## Graphic elements
 
-- **Northside Waves:** a line-based graphic used in corners to balance a piece.
+- **Northside Waves:** a line-based graphic used in corners to balance a piece. File: `brand-elements/waves/northside-waves.png` (dark lines on transparent).
 - **Noise:** add 12% to 15% noise (uniform, monochrome) to some photos and backgrounds.
 - **Photo containers:** circular image frames are allowed.
-- **Textures:** textured paper, scratches, and torn edges are fine in moderation. Legibility comes first.
+- **Textures:** textured paper, scratches, and torn edges are fine in moderation. Legibility comes first. File: `brand-elements/textures/northside-paper-texture.jpg`.
+
+These are web-sized exports. Full-size and layered originals (AI, EPS, PSD) are on the Digital Ministry shared drive.
 
 ## Photography
 

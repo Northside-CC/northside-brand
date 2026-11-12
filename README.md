@@ -10,6 +10,8 @@ The single source of truth for Northside Christian Church's brand assets, colors
 | `brand-guidelines.md` | Readable rules for our name, voice, logo, colors, type, photo, and video. |
 | `logos/` | Official Northside logos: full logo (horizontal and stacked), simple logo, and logo mark. Light and dark SVG. |
 | `sub-brands/` | Logos for Kidside, NSM, and YA. |
+| `brand-elements/` | Web-sized gradients, Northside Waves, and paper texture. |
+| `CHANGELOG.md` | What changed in each version. |
 | `index.html` | Landing page for the kit. |
 | `brand-review.html` | Visual page showing every color, logo, and typeface. |
 | `assets/` | CSS, JavaScript, and favicon for the two pages. |
@@ -20,11 +22,15 @@ The single source of truth for Northside Christian Church's brand assets, colors
 2. Read `brand-guidelines.md` for voice, naming, and logo rules.
 3. Use Green NCC (`#0E8291`) as the lead color.
 4. Write "Northside Christian Church" on first reference. Never "Northside Church."
-5. Treat any field marked `needs_review` as unconfirmed.
+5. Treat any field marked `needs_review` or `missing` as unconfirmed.
+6. Use the files in `brand-elements/` for gradients, waves, and textures. Do not recreate them.
+7. Use the alt text in `logos.alt_text`.
 
 ## Updating the kit
 
-The two web pages draw their colors, logos, and type samples from `brand-kit.json`. To change a color or add a logo, edit the JSON and the pages update themselves.
+The two web pages draw their colors, logos, and type samples from `brand-kit.json`. To change a color or add a logo, edit the JSON and the pages update themselves. Bump `version` and add a line to `CHANGELOG.md` with each change.
+
+Keep font files and layered originals (AI, EPS, PSD) out of this repo. Add web-sized exports only.
 
 To preview locally:
 

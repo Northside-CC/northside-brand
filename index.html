@@ -15,8 +15,8 @@
     <a href="./"><img src="logos/full-logo/northside-full-logo-light.svg" alt="Northside Christian Church"></a>
     <nav>
       <a class="btn solid" href="brand-review.html">Brand Review</a>
-      <a class="btn" data-repo="home" href="#">GitHub Repo</a>
-      <a class="btn" data-repo="zip" href="#">Download ZIP</a>
+      <a class="btn" data-repo="home" href="https://github.com/northside-cc/northside-brand">GitHub Repo</a>
+      <a class="btn" data-repo="zip" href="https://github.com/northside-cc/northside-brand/archive/refs/heads/main.zip">Download ZIP</a>
     </nav>
   </div>
 </header>
@@ -32,7 +32,7 @@
 <div class="agent">
   <div class="wrap">
     <span class="eyebrow">Agent instructions</span>
-    <p>Start with <code>brand-kit.json</code>. It holds all structured brand data in one machine-readable file. For voice, naming, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repo root. When producing branded output, use <strong>Green NCC (#0E8291)</strong> as the lead color, write <strong>Northside Christian Church</strong> on first reference (never "Northside Church"), and follow the <code>voice</code> object. Logo files are SVGs in <code>logos/</code>. Prefer the full logo in most contexts. For Kidside, NSM, or YA work, use that ministry's entry under <code>sub_brands</code> and its files in <code>sub-brands/</code>. Fields marked <code>needs_review</code> are not confirmed yet, so check with the Digital Ministry team before relying on them.</p>
+    <p>Start with <code>brand-kit.json</code>. It holds all structured brand data in one machine-readable file. For voice, naming, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repo root. When producing branded output, use <strong>Green NCC (#0E8291)</strong> as the lead color, write <strong>Northside Christian Church</strong> on first reference (never "Northside Church"), and follow the <code>voice</code> object. Northside logo files are SVGs in <code>logos/</code>. Some sub-brand logos are PNG only. Prefer the full logo in most contexts. For Kidside, NSM, or YA work, use that ministry's entry under <code>sub_brands</code> and its files in <code>sub-brands/</code>. Fields marked <code>needs_review</code> or <code>missing</code> are not confirmed yet, so check with the Digital Ministry team before relying on them. Gradients, waves, and textures are image files in <code>brand-elements/</code>. Use them as is and do not recreate them. Use the alt text in <code>logos.alt_text</code>.</p>
   </div>
 </div>
 
@@ -95,7 +95,7 @@
             <tr><td><code>typography</code></td><td>Gotham, Dharma Gothic, and Helvetica Neue / Now with roles, weights, CSS fallback stacks, and type rules. Font files are licensed and not included.</td></tr>
             <tr><td><code>logos</code></td><td>Paths for full_logo, full_logo_stacked, simple_logo, and logo_mark in light and dark variants. Includes the clear space rule, minimum size, and don'ts.</td></tr>
             <tr><td><code>sub_brands</code></td><td>The branded-house rule, plus colors, typography, logo paths, and logo rules for <code>kidside</code>, <code>nsm</code>, and <code>young_adults</code>.</td></tr>
-            <tr><td><code>brand_elements</code></td><td>Northside Waves, noise, photo containers, and textures, each with usage guidance.</td></tr>
+            <tr><td><code>brand_elements</code></td><td>Northside Waves, noise, photo containers, and textures, with usage guidance and file paths in <code>brand-elements/</code>.</td></tr>
             <tr><td><code>photography</code></td><td>Shooting and editing guidance.</td></tr>
             <tr><td><code>voice</code></td><td>Voice summary, audience, tone words, things to avoid, and Scripture quoting rules.</td></tr>
             <tr><td><code>usage</code></td><td>Dos and don'ts for applying the brand.</td></tr>

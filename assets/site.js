@@ -60,6 +60,7 @@
       if (c.rgb) lines.push("RGB " + c.rgb.join(", "));
       if (c.cmyk) lines.push("CMYK " + c.cmyk.join("/"));
       if (c.pantone) lines.push("Pantone " + c.pantone);
+      if (c.pantone_tcx) lines.push("Pantone " + c.pantone_tcx);
       if (c.note || c.pantone_note) lines.push("\u26A0 See note in brand-kit.json");
       if (lines.length) {
         const sub = el("div", "sub");
@@ -171,7 +172,7 @@
         grid.append(card);
       });
       block.append(grid);
-      if (sb.logos_needs_review) block.append(el("p", "note", sb.logos_needs_review));
+      if (sb.logos_missing) block.append(el("p", "note", sb.logos_missing));
 
       const cols = el("div", "cols");
       const type = el("div", "panel");
@@ -200,8 +201,8 @@
       const sample = el("div", "sample", index === 1 ? "CONNECTING PEOPLE TO JESUS" : "Connecting People to Jesus");
       sample.style.fontFamily = family.css_stack;
       sample.style.fontWeight = "700";
-      card.append(sample, el("p", "role", family.role + " " + family.notes));
-      card.append(el("p", "small", "Weights: " + family.weights.join(", ")));
+      card.append(sample, el("p", "role", family.role + (family.notes ? " " + family.notes : "")));
+      if (family.weights) card.append(el("p", "small", "Weights: " + family.weights.join(", ")));
       typeTarget.append(card);
     });
   }
