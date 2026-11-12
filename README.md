@@ -8,8 +8,8 @@ The single source of truth for Northside Christian Church's brand assets, colors
 | --- | --- |
 | `brand-kit.json` | Machine-readable brand data. Start here. |
 | `brand-guidelines.md` | Readable rules for our name, voice, logo, colors, type, photo, and video. |
-| `logos/full-logo/` | Full logo (symbol + logo type), light and dark SVG. |
-| `logos/logo-mark/` | Logo mark (symbol only), light and dark SVG. |
+| `logos/` | Official Northside logos: full logo (horizontal and stacked), simple logo, and logo mark. Light and dark SVG. |
+| `sub-brands/` | Logos for Kidside, NSM, and YA. |
 | `index.html` | Landing page for the kit. |
 | `brand-review.html` | Visual page showing every color, logo, and typeface. |
 | `assets/` | CSS, JavaScript, and favicon for the two pages. |
@@ -45,10 +45,10 @@ If the repo owner or name changes, update `brand.repository` in `brand-kit.json`
 
 ## Still to confirm
 
-- **Logo files.** The SVGs here were taken from the logo on mynorthside.com. The dark variant and the logo mark were derived from it. Replace them with the official files and add PNG exports.
-- **Color grouping.** Green NCC is the primary color. Confirm which of the other five are primary and which are secondary.
-- **Dark Coral Pantone.** The guidelines PDF lists 2706 C, the same as Light Purple. That looks like a typo.
-- **Gradients.** The guidelines define four gradients. Their values are not recorded yet.
+- **YA logo files.** Only the orange YA profile image is in the kit. The horizontal, stacked, and logo mark files shown in the YA guide were not in the shared drive folder.
+- **Sea Kidside.** The Kidside guide prints `FF9703` for this color, which is Yellow NCC. The kit uses `#59BFD1`, read from the swatch artwork in the guide.
+- **Dark Coral Pantone.** The main guidelines PDF prints 2706 C, the same as Light Purple. That looks like a typo.
 - **Web typeface.** mynorthside.com uses Proxima Nova, which is not in the guidelines. Confirm the approved web font.
-- **Sub-brand and graphic element assets.** Kidside, NSM, ministry logos, and Northside Waves artwork are not included yet.
-- **Fonts.** Gotham, Dharma Gothic, Helvetica Neue, and Proxima Nova are licensed. Do not add font files to this repo if it is public.
+- **NSM vector logos.** The NSM logos here are PNGs. The drive has an EPS that could be exported to SVG.
+- **Other ministry logos.** Northside Men, Northside Women, Northside U, Marriage, Care, Life Groups, and Special Needs are not included yet.
+- **Fonts.** Gotham, Dharma Gothic, Helvetica Neue, Proxima Nova, Grobold, Bree, and Grako are licensed. Do not add font files to this repo while it is public.

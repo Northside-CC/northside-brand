@@ -1,6 +1,6 @@
 {
   "$comment": "Single source of truth for Northside Christian Church brand data. All asset paths are relative to the repo root. Values come from the Northside Brand Guidelines (2023-11-07) unless a 'source' field says otherwise. Fields marked needs_review have not been confirmed by the Digital Ministry team.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "updated": "2026-11-12",
   "brand": {
     "name": "Northside Christian Church",
@@ -9,7 +9,7 @@
     "location": "New Albany, IN",
     "website": "https://www.mynorthside.com",
     "repository": "Northside-CC/northside-brand",
-    "architecture": "Branded house, not a house of brands. Ministries follow the Northside Christian Church pattern. Kidside and NSM are the only exceptions."
+    "architecture": "Branded house, not a house of brands. Ministries follow the Northside Christian Church pattern. Kidside, NSM, and Young Adults have their own brand guides."
   },
   "naming": {
     "rules": [
@@ -25,73 +25,150 @@
   },
   "colors": {
     "source": "Northside Brand Guidelines 2023-11-07, Colors section",
-    "needs_review": "The primary/secondary grouping could not be read reliably from the PDF. Green NCC is confirmed as the primary brand color; confirm how the other five are grouped.",
     "primary": {
       "name": "Green NCC",
       "hex": "#0E8291",
-      "rgb": [14, 130, 145],
-      "cmyk": [82, 28, 36, 11],
+      "rgb": [
+        14,
+        130,
+        145
+      ],
+      "cmyk": [
+        82,
+        28,
+        36,
+        11
+      ],
       "pantone": "3145 C",
       "text_on": "#FFFFFF",
-      "usage": "Main brand color. Links, buttons, and key accents."
+      "usage": "Main brand color. Links, buttons, and key accents.",
+      "group": "primary"
     },
     "palette": [
       {
         "name": "Yellow NCC",
         "hex": "#FF9703",
-        "rgb": [255, 151, 3],
-        "cmyk": [0, 49, 93, 0],
+        "rgb": [
+          255,
+          151,
+          3
+        ],
+        "group": "primary",
+        "cmyk": [
+          0,
+          49,
+          93,
+          0
+        ],
         "pantone": "1375 C",
-        "text_on": "#1D1D1D"
-      },
-      {
-        "name": "Dark Coral",
-        "hex": "#CF6648",
-        "rgb": [207, 102, 72],
-        "cmyk": [15, 69, 72, 4],
-        "pantone": null,
-        "pantone_note": "The guidelines PDF lists 2706 C, which is the Light Purple value. Treat as unconfirmed.",
-        "text_on": "#1D1D1D",
-        "text_on_note": "White reaches only 3.7:1 on Dark Coral. Use white for large or bold text only."
-      },
-      {
-        "name": "Light Purple",
-        "hex": "#C5CDE8",
-        "rgb": [197, 205, 232],
-        "cmyk": [26, 17, 1, 0],
-        "pantone": "2706 C",
         "text_on": "#1D1D1D"
       },
       {
         "name": "Cream",
         "hex": "#FAF1E8",
-        "rgb": [250, 241, 232],
-        "cmyk": [2, 6, 10, 0],
+        "rgb": [
+          250,
+          241,
+          232
+        ],
+        "group": "secondary",
+        "cmyk": [
+          2,
+          6,
+          10,
+          0
+        ],
         "pantone": "P 1-9 C",
         "text_on": "#1D1D1D"
       },
       {
         "name": "Light Brown",
         "hex": "#A08A86",
-        "rgb": [160, 138, 134],
-        "cmyk": [34, 40, 37, 17],
+        "rgb": [
+          160,
+          138,
+          134
+        ],
+        "group": "secondary",
+        "cmyk": [
+          34,
+          40,
+          37,
+          17
+        ],
         "pantone": "408 C",
         "text_on": "#1D1D1D"
+      },
+      {
+        "name": "Light Purple",
+        "hex": "#C5CDE8",
+        "rgb": [
+          197,
+          205,
+          232
+        ],
+        "group": "secondary",
+        "cmyk": [
+          26,
+          17,
+          1,
+          0
+        ],
+        "pantone": "2706 C",
+        "text_on": "#1D1D1D"
+      },
+      {
+        "name": "Dark Coral",
+        "hex": "#CF6648",
+        "rgb": [
+          207,
+          102,
+          72
+        ],
+        "group": "secondary",
+        "cmyk": [
+          15,
+          69,
+          72,
+          4
+        ],
+        "pantone": null,
+        "pantone_note": "The guidelines PDF prints 2706 C for Dark Coral, the same value as Light Purple. This looks like a typo in the PDF. Treat as unconfirmed.",
+        "text_on": "#1D1D1D",
+        "text_on_note": "White reaches only 3.7:1 on Dark Coral. Use white for large or bold text only."
       }
     ],
     "gradients": {
-      "note": "The guidelines define four gradients (Gradient #1 to #4). Their color stops are not recorded here yet. See the guidelines PDF.",
-      "needs_review": true
+      "note": "The guidelines show four gradients (Gradient #1 to #4). They are soft, free-form blends of the brand colors with no fixed color stops, so they are not recorded as values here. See page 20 of the guidelines PDF."
     },
     "web_neutrals": {
       "source": "mynorthside.com theme, not the guidelines PDF",
       "scale": [
-        { "name": "Darkest", "hex": "#1D1D1D", "usage": "Body text and dark backgrounds" },
-        { "name": "Dark", "hex": "#334155" },
-        { "name": "Medium", "hex": "#64748B" },
-        { "name": "Light", "hex": "#EDEDF2" },
-        { "name": "Lightest", "hex": "#F3F3F3" },
-        { "name": "White", "hex": "#FFFFFF" }
+        {
+          "name": "Darkest",
+          "hex": "#1D1D1D",
+          "usage": "Body text and dark backgrounds"
+        },
+        {
+          "name": "Dark",
+          "hex": "#334155"
+        },
+        {
+          "name": "Medium",
+          "hex": "#64748B"
+        },
+        {
+          "name": "Light",
+          "hex": "#EDEDF2"
+        },
+        {
+          "name": "Lightest",
+          "hex": "#F3F3F3"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
       ]
     },
     "semantic": {
@@ -109,21 +186,34 @@
       {
         "name": "Gotham",
         "role": "Main logo type. Body text, long intertitles, and informational text.",
-        "weights": ["Book", "Medium", "Bold"],
+        "weights": [
+          "Book",
+          "Medium",
+          "Bold"
+        ],
         "css_stack": "Gotham, 'Gotham SSm', 'Helvetica Neue', Helvetica, Arial, sans-serif",
         "notes": "Better suited to web than print."
       },
       {
         "name": "Dharma Gothic",
         "role": "Big headlines.",
-        "weights": ["Regular", "Bold", "ExBold", "Heavy"],
+        "weights": [
+          "Regular",
+          "Bold",
+          "ExBold",
+          "Heavy"
+        ],
         "css_stack": "'Dharma Gothic E', 'dharma-gothic-e', Impact, 'Arial Narrow', sans-serif",
         "notes": "Expressive and imposing. Needs height to read well. Avoid it where space is tight."
       },
       {
         "name": "Helvetica Neue / Helvetica Now",
         "role": "Complementary type for headlines and on-screen content.",
-        "weights": ["Bold", "Black", "Heavy Extended"],
+        "weights": [
+          "Bold",
+          "Black",
+          "Heavy Extended"
+        ],
         "css_stack": "'Helvetica Neue', 'Helvetica Now', Helvetica, Arial, sans-serif",
         "notes": "Use the extended version with care. It does not work well for long sentences."
       }
@@ -144,13 +234,22 @@
     ]
   },
   "logos": {
-    "source": "Vector artwork taken from the logo published on mynorthside.com. The dark variant and the logo mark were derived from that file.",
-    "needs_review": "Replace with the official logo files from the Digital Ministry shared drive, and add PNG exports.",
+    "source": "Official logo files from the Digital Ministry shared drive (NCC Branding Assets / Logos), converted from the vector PDFs to SVG.",
     "preferred": "full_logo",
     "full_logo": {
-      "description": "Logo symbol plus the Northside Christian Church logo type. Use this in most contexts.",
+      "description": "Logo symbol plus the Northside Christian Church logo type, horizontal. Use this in most contexts.",
       "light": "logos/full-logo/northside-full-logo-light.svg",
       "dark": "logos/full-logo/northside-full-logo-dark.svg"
+    },
+    "full_logo_stacked": {
+      "description": "Stacked version of the full logo, for square or narrow spaces.",
+      "light": "logos/full-logo/northside-full-logo-stacked-light.svg",
+      "dark": "logos/full-logo/northside-full-logo-stacked-dark.svg"
+    },
+    "simple_logo": {
+      "description": "Logo symbol plus the word Northside. For places where the full name is already clear.",
+      "light": "logos/simple-logo/northside-simple-logo-light.svg",
+      "dark": "logos/simple-logo/northside-simple-logo-dark.svg"
     },
     "logo_mark": {
       "description": "Logo symbol only (the N in a circle). For avatars, favicons, and tight spaces.",
@@ -158,8 +257,8 @@
       "dark": "logos/logo-mark/northside-logo-mark-dark.svg"
     },
     "variants": {
-      "light": "Light artwork for dark or colored backgrounds.",
-      "dark": "Dark artwork for white or cream backgrounds."
+      "light": "White artwork for dark or colored backgrounds.",
+      "dark": "Dark artwork (#373A36) for white or cream backgrounds."
     },
     "clearspace": "Half the height of the logo on every side. No graphic elements inside this zone.",
     "minimum_size": "Full logo: 1 inch wide.",
@@ -173,13 +272,454 @@
     ]
   },
   "sub_brands": {
-    "rule": "Every ministry sub-brand follows the same structure as the primary Northside Christian Church logo. Ministries do not exist apart from Northside.",
-    "exceptions": [
-      { "name": "Kidside", "note": "Has its own brand guidelines." },
-      { "name": "NSM", "full_name": "Northside Student Ministry", "note": "Has its own brand guidelines." }
-    ],
-    "assets": "Not included in this repo yet.",
-    "needs_review": true
+    "rule": "We are a branded house. Ministries do not exist apart from Northside, and ministry logos follow the Northside Christian Church pattern unless the ministry has its own brand guide below.",
+    "shared": "All three sub-brands use Gotham (Book, Medium, Bold, Black) for body text and follow the main photography and video guidance.",
+    "kidside": {
+      "name": "Kidside",
+      "full_name": "Kidside",
+      "audience": "Children's ministry",
+      "source": "NCC Kidside Brand Guidelines (2023). The guide spells the name KidSide.",
+      "stage": "#030040",
+      "colors": [
+        {
+          "name": "Blue Kidside",
+          "hex": "#030040",
+          "rgb": [
+            3,
+            0,
+            64
+          ],
+          "group": "main",
+          "text_on": "#FFFFFF",
+          "cmyk": [
+            100,
+            94,
+            40,
+            57
+          ]
+        },
+        {
+          "name": "Sea Kidside",
+          "hex": "#59BFD1",
+          "rgb": [
+            89,
+            191,
+            209
+          ],
+          "group": "main",
+          "text_on": "#1D1D1D",
+          "note": "The guide prints FF9703 for this color, which is Yellow NCC. That is a typo. This value was read from the swatch artwork in the guide. Confirm it."
+        },
+        {
+          "name": "Grey 1",
+          "hex": "#DADADA",
+          "rgb": [
+            218,
+            218,
+            218
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D",
+          "cmyk": [
+            0,
+            0,
+            0,
+            20
+          ]
+        },
+        {
+          "name": "Orange",
+          "hex": "#F05729",
+          "rgb": [
+            240,
+            87,
+            41
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D",
+          "cmyk": [
+            0,
+            77,
+            86,
+            0
+          ]
+        },
+        {
+          "name": "Green 1",
+          "hex": "#96D142",
+          "rgb": [
+            150,
+            209,
+            66
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D"
+        },
+        {
+          "name": "Green 2",
+          "hex": "#8CA65E",
+          "rgb": [
+            140,
+            166,
+            94
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D",
+          "cmyk": [
+            52,
+            20,
+            74,
+            4
+          ]
+        }
+      ],
+      "typography": [
+        {
+          "name": "Grobold",
+          "role": "Logo type. A cartoon-inspired face, customized in the logo.",
+          "weights": [
+            "Bold"
+          ]
+        },
+        {
+          "name": "Gotham",
+          "role": "Main type for body text, intertitles, and informational text.",
+          "weights": [
+            "Book",
+            "Medium",
+            "Bold",
+            "Black"
+          ]
+        }
+      ],
+      "logos": [
+        {
+          "name": "Full logo, full color",
+          "file": "sub-brands/kidside/kidside-logo-full-color.svg",
+          "on": "light"
+        },
+        {
+          "name": "Full logo, full color (PNG)",
+          "file": "sub-brands/kidside/kidside-logo-full-color.png",
+          "on": "light"
+        },
+        {
+          "name": "Full logo, navy",
+          "file": "sub-brands/kidside/kidside-logo-navy.png",
+          "on": "light"
+        },
+        {
+          "name": "Full logo, black",
+          "file": "sub-brands/kidside/kidside-logo-black.png",
+          "on": "light"
+        },
+        {
+          "name": "Full logo, white",
+          "file": "sub-brands/kidside/kidside-logo-white.png",
+          "on": "dark"
+        },
+        {
+          "name": "Wordmark, color",
+          "file": "sub-brands/kidside/kidside-wordmark-color.png",
+          "on": "light"
+        },
+        {
+          "name": "Wordmark stacked, color",
+          "file": "sub-brands/kidside/kidside-wordmark-stacked-color.png",
+          "on": "light"
+        }
+      ],
+      "logo_rules": {
+        "clearspace": "Half the height of the logo on every side.",
+        "minimum_size": "Full logo: 1 inch wide.",
+        "donts": [
+          "Do not change the logo type.",
+          "Do not warp, stretch, skew, or slant the logo.",
+          "Do not add a stroke to the logo.",
+          "Do not add gradients, drop shadows, or other effects.",
+          "Do not place the logo on complex or patterned backgrounds.",
+          "Do not use parts of the logo on their own without approval from the Communications Team."
+        ]
+      },
+      "elements": "Kidside color waves: flowing shapes in the brand colors that surround the logo, balance a layout, or hold photos."
+    },
+    "nsm": {
+      "name": "NSM",
+      "full_name": "Northside Student Ministry",
+      "audience": "Student ministry",
+      "source": "NSM Brandbook (2024).",
+      "stage": "#262626",
+      "colors": [
+        {
+          "name": "Blue NSM",
+          "hex": "#3730F2",
+          "rgb": [
+            55,
+            48,
+            242
+          ],
+          "group": "main",
+          "text_on": "#FFFFFF",
+          "note": "The guide prints RGB 74, 48, 242, which does not match the hex. The hex is used here."
+        },
+        {
+          "name": "Black NSM",
+          "hex": "#262626",
+          "rgb": [
+            38,
+            38,
+            38
+          ],
+          "group": "main",
+          "text_on": "#FFFFFF"
+        },
+        {
+          "name": "Purple NSM",
+          "hex": "#8C5CF2",
+          "rgb": [
+            140,
+            92,
+            242
+          ],
+          "group": "secondary",
+          "text_on": "#FFFFFF"
+        },
+        {
+          "name": "Yellow NSM",
+          "hex": "#F2E744",
+          "rgb": [
+            242,
+            231,
+            68
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D"
+        },
+        {
+          "name": "Pink NSM",
+          "hex": "#F291E2",
+          "rgb": [
+            242,
+            145,
+            226
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D"
+        }
+      ],
+      "typography": [
+        {
+          "name": "Bree",
+          "role": "Headlines and logo type. Set headlines in all caps. Switch to title case if a long headline gets hard to read.",
+          "weights": [
+            "Regular",
+            "Semibold",
+            "Bold",
+            "Extrabold"
+          ]
+        },
+        {
+          "name": "Gotham",
+          "role": "Body text, intertitles, and informational text.",
+          "weights": [
+            "Book",
+            "Medium",
+            "Bold",
+            "Black"
+          ]
+        }
+      ],
+      "logos": [
+        {
+          "name": "Full name, dark",
+          "file": "sub-brands/nsm/nsm-logo-full-name-dark.png",
+          "on": "light"
+        },
+        {
+          "name": "Full name, light",
+          "file": "sub-brands/nsm/nsm-logo-full-name-light.png",
+          "on": "dark"
+        },
+        {
+          "name": "Horizontal, dark",
+          "file": "sub-brands/nsm/nsm-logo-horizontal-dark.png",
+          "on": "light"
+        },
+        {
+          "name": "Horizontal, light",
+          "file": "sub-brands/nsm/nsm-logo-horizontal-light.png",
+          "on": "dark"
+        },
+        {
+          "name": "Stacked, dark",
+          "file": "sub-brands/nsm/nsm-logo-stacked-dark.png",
+          "on": "light"
+        },
+        {
+          "name": "Stacked, light",
+          "file": "sub-brands/nsm/nsm-logo-stacked-light.png",
+          "on": "dark"
+        },
+        {
+          "name": "Logo mark, dark",
+          "file": "sub-brands/nsm/nsm-logo-mark-dark.png",
+          "on": "light"
+        },
+        {
+          "name": "Logo mark, light",
+          "file": "sub-brands/nsm/nsm-logo-mark-light.png",
+          "on": "dark"
+        }
+      ],
+      "logo_rules": {
+        "clearspace": "Half the height of the logo on every side.",
+        "minimum_size": "Full logo: 1 inch wide.",
+        "donts": [
+          "Do not change the logo type.",
+          "Do not warp, stretch, skew, or slant the logo.",
+          "Do not add a stroke to the logo.",
+          "Do not place the logo on complex or patterned backgrounds."
+        ]
+      }
+    },
+    "young_adults": {
+      "name": "YA",
+      "full_name": "Northside Young Adults",
+      "audience": "Young adults ministry",
+      "source": "YA Brandbook (2024).",
+      "stage": "#373A36",
+      "colors": [
+        {
+          "name": "YA Orange",
+          "hex": "#EB5812",
+          "rgb": [
+            235,
+            88,
+            18
+          ],
+          "group": "primary",
+          "text_on": "#1D1D1D"
+        },
+        {
+          "name": "YA Cream",
+          "hex": "#FAF1E8",
+          "rgb": [
+            250,
+            241,
+            232
+          ],
+          "group": "primary",
+          "text_on": "#1D1D1D",
+          "note": "Same value as Cream in the main Northside palette."
+        },
+        {
+          "name": "YA Blue",
+          "hex": "#0540BE",
+          "rgb": [
+            5,
+            64,
+            190
+          ],
+          "group": "primary",
+          "text_on": "#FFFFFF"
+        },
+        {
+          "name": "YA Gold",
+          "hex": "#DFBA6C",
+          "rgb": [
+            223,
+            186,
+            108
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D"
+        },
+        {
+          "name": "YA Charcoal",
+          "hex": "#373A36",
+          "rgb": [
+            55,
+            58,
+            54
+          ],
+          "group": "secondary",
+          "text_on": "#FFFFFF"
+        },
+        {
+          "name": "YA Green",
+          "hex": "#4BA347",
+          "rgb": [
+            75,
+            163,
+            71
+          ],
+          "group": "secondary",
+          "text_on": "#1D1D1D",
+          "note": "The guide prints RGB 75, 168, 71, which is one step off the hex. The hex is used here."
+        },
+        {
+          "name": "YA Sky",
+          "hex": "#01B4FE",
+          "rgb": [
+            1,
+            180,
+            254
+          ],
+          "group": "tertiary",
+          "text_on": "#1D1D1D"
+        },
+        {
+          "name": "YA Yellow",
+          "hex": "#FFB80A",
+          "rgb": [
+            255,
+            184,
+            10
+          ],
+          "group": "tertiary",
+          "text_on": "#1D1D1D"
+        }
+      ],
+      "color_names_note": "The YA guide gives hex values and a primary, secondary, or tertiary rank but no color names. The names here are descriptive labels, not official.",
+      "typography": [
+        {
+          "name": "Grako",
+          "role": "Headlines and logo type. Set headlines in all caps. Switch to title case if a long headline gets hard to read.",
+          "weights": [
+            "Regular",
+            "Tall"
+          ]
+        },
+        {
+          "name": "Gotham",
+          "role": "Body text, intertitles, and informational text.",
+          "weights": [
+            "Book",
+            "Medium",
+            "Bold",
+            "Black"
+          ]
+        }
+      ],
+      "logos": [
+        {
+          "name": "Avatar, white mark on orange",
+          "file": "sub-brands/young-adults/ya-avatar-orange.png",
+          "on": "light"
+        }
+      ],
+      "logos_needs_review": "Only the profile image was available as a usable file. The YA guide shows a horizontal logo, a stacked logo, and a logo mark in light and dark, but the source files were not in the shared folder.",
+      "logo_rules": {
+        "clearspace": "Half the height of the logo on every side.",
+        "minimum_size": "Full logo: 1 inch wide.",
+        "donts": [
+          "Do not change the logo type.",
+          "Do not warp, stretch, skew, or slant the logo.",
+          "Do not add a stroke to the logo.",
+          "Do not place the logo on complex or patterned backgrounds."
+        ]
+      }
+    }
   },
   "brand_elements": {
     "waves": "Northside Waves: a line-based graphic used in the corners of a piece to balance it and add rhythm.",
@@ -214,8 +754,18 @@
     "source": "Northside staff writing standards, not the guidelines PDF",
     "summary": "Jesus-centered, simple, and respectful. Write the way a warm, clear staff member would speak, not like a corporate memo.",
     "audience": "Assume readers include people who are new to faith.",
-    "tone": ["warm", "clear", "simple", "respectful", "Jesus-centered"],
-    "avoid": ["corporate or memo-style language", "insider church jargon without explanation", "empty filler phrases"],
+    "tone": [
+      "warm",
+      "clear",
+      "simple",
+      "respectful",
+      "Jesus-centered"
+    ],
+    "avoid": [
+      "corporate or memo-style language",
+      "insider church jargon without explanation",
+      "empty filler phrases"
+    ],
     "scripture": "Quote from the NIV or NLT and always give the reference. Never guess at a verse's wording."
   },
   "usage": {
@@ -226,7 +776,7 @@
       "Write 'Northside Christian Church' on first reference."
     ],
     "dont": [
-      "Do not create a separate logo for a ministry.",
+      "Do not create a new logo for a ministry. Use the Northside pattern or an approved sub-brand.",
       "Do not use the logo type without the symbol.",
       "Do not recolor, stretch, outline, or add effects to the logo.",
       "Do not write 'Northside Church'."

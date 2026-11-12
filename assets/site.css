@@ -149,3 +149,12 @@ footer a { color: #fff; }
   section.block { padding: 44px 0; }
   .topbar { position: static; }
 }
+
+/* Sub-brands */
+.subbrand { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.subbrand > .logos, .subbrand > .cols { margin-top: 20px; }
+h3.subbrand-title { margin: 0 0 6px; font-size: 24px; letter-spacing: 0; text-transform: none; color: var(--ink); }
+.subnav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
+.subnav a { padding: 6px 16px; border: 1.5px solid var(--ink); border-radius: 999px; color: var(--ink); font-size: 13px; font-weight: 700; text-decoration: none; }
+.subnav a:hover { background: var(--ink); color: #fff; }
+section[id] { scroll-margin-top: 70px; }

@@ -32,7 +32,7 @@
 <div class="agent">
   <div class="wrap">
     <span class="eyebrow">Agent instructions</span>
-    <p>Start with <code>brand-kit.json</code>. It holds all structured brand data in one machine-readable file. For voice, naming, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repo root. When producing branded output, use <strong>Green NCC (#0E8291)</strong> as the lead color, write <strong>Northside Christian Church</strong> on first reference (never "Northside Church"), and follow the <code>voice</code> object. Logo files are SVGs in <code>logos/</code>. Prefer the full logo in most contexts. Fields marked <code>needs_review</code> are not confirmed yet, so check with the Digital Ministry team before relying on them.</p>
+    <p>Start with <code>brand-kit.json</code>. It holds all structured brand data in one machine-readable file. For voice, naming, logo usage, and writing rules, read <code>brand-guidelines.md</code>. All asset paths in the JSON are relative to the repo root. When producing branded output, use <strong>Green NCC (#0E8291)</strong> as the lead color, write <strong>Northside Christian Church</strong> on first reference (never "Northside Church"), and follow the <code>voice</code> object. Logo files are SVGs in <code>logos/</code>. Prefer the full logo in most contexts. For Kidside, NSM, or YA work, use that ministry's entry under <code>sub_brands</code> and its files in <code>sub-brands/</code>. Fields marked <code>needs_review</code> are not confirmed yet, so check with the Digital Ministry team before relying on them.</p>
   </div>
 </div>
 
@@ -58,7 +58,13 @@
         <a class="card" href="brand-review.html#logos">
           <span class="path">logos/</span>
           <h4>Logo Files</h4>
-          <p>SVG files for the full logo (symbol + logo type) and the logo mark (symbol only). Each comes in light and dark variants.</p>
+          <p>Official SVG files for the full logo (horizontal and stacked), the simple logo, and the logo mark. Each comes in light and dark variants.</p>
+          <span class="tag">Assets</span>
+        </a>
+        <a class="card" href="brand-review.html#sub-brands">
+          <span class="path">sub-brands/</span>
+          <h4>Sub-brands</h4>
+          <p>Logos, colors, and type for Kidside, NSM (Northside Student Ministry), and YA (Young Adults). Each has its own brand guide.</p>
           <span class="tag">Assets</span>
         </a>
         <a class="card" href="brand-review.html">
@@ -82,13 +88,13 @@
           <tbody>
             <tr><td><code>brand</code></td><td>Church name, mission ("Connecting People to Jesus"), location, website, and brand architecture (branded house).</td></tr>
             <tr><td><code>naming</code></td><td>How to write our name, plus approved abbreviations (VAN, NSM, YA).</td></tr>
-            <tr><td><code>colors.primary</code></td><td>Green NCC (#0E8291), the main brand color. Includes RGB, CMYK, Pantone, and a text_on value.</td></tr>
-            <tr><td><code>colors.palette</code></td><td>Yellow NCC, Dark Coral, Light Purple, Cream, and Light Brown. Each with RGB, CMYK, Pantone, and text_on.</td></tr>
+            <tr><td><code>colors.primary</code></td><td>Green NCC (#0E8291), the lead brand color. Includes RGB, CMYK, Pantone, group, and a text_on value.</td></tr>
+            <tr><td><code>colors.palette</code></td><td>Yellow NCC (primary) plus Cream, Light Brown, Light Purple, and Dark Coral (secondary). Each with RGB, CMYK, Pantone, group, and text_on.</td></tr>
             <tr><td><code>colors.web_neutrals</code></td><td>Six-step neutral scale used on mynorthside.com, from #1D1D1D to white.</td></tr>
             <tr><td><code>colors.semantic</code></td><td>Success, info, warning, and danger colors used on mynorthside.com.</td></tr>
             <tr><td><code>typography</code></td><td>Gotham, Dharma Gothic, and Helvetica Neue / Now with roles, weights, CSS fallback stacks, and type rules. Font files are licensed and not included.</td></tr>
-            <tr><td><code>logos</code></td><td>Paths for full_logo and logo_mark in light and dark variants. Includes the clear space rule, minimum size, and don'ts.</td></tr>
-            <tr><td><code>sub_brands</code></td><td>The branded-house rule and its two exceptions, Kidside and NSM.</td></tr>
+            <tr><td><code>logos</code></td><td>Paths for full_logo, full_logo_stacked, simple_logo, and logo_mark in light and dark variants. Includes the clear space rule, minimum size, and don'ts.</td></tr>
+            <tr><td><code>sub_brands</code></td><td>The branded-house rule, plus colors, typography, logo paths, and logo rules for <code>kidside</code>, <code>nsm</code>, and <code>young_adults</code>.</td></tr>
             <tr><td><code>brand_elements</code></td><td>Northside Waves, noise, photo containers, and textures, each with usage guidance.</td></tr>
             <tr><td><code>photography</code></td><td>Shooting and editing guidance.</td></tr>
             <tr><td><code>voice</code></td><td>Voice summary, audience, tone words, things to avoid, and Scripture quoting rules.</td></tr>

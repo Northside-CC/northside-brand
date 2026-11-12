@@ -1,6 +1,6 @@
 # Northside Christian Church Brand Guidelines
 
-A short, readable version of our brand rules for staff, volunteers, and AI tools. Structured values (hex codes, file paths) live in [`brand-kit.json`](brand-kit.json). The full designed guidelines are the 2023 Northside Brand Guidelines PDF, kept on the Digital Ministry shared drive.
+A short, readable version of our brand rules for staff, volunteers, and AI tools. Structured values (hex codes, file paths) live in [`brand-kit.json`](brand-kit.json). The full designed guides (Northside, Kidside, NSM, and YA) are PDFs kept on the Digital Ministry shared drive.
 
 ## Why this matters
 
@@ -24,14 +24,16 @@ Our mission: **Connecting People to Jesus.**
 
 ## Logo
 
-Two versions are in this repo:
+These are the official logo files, in `logos/`:
 
 | Version | When to use | Files |
 | --- | --- | --- |
 | Full logo (symbol + logo type) | Most contexts | `logos/full-logo/` |
+| Full logo, stacked | Square or narrow spaces | `logos/full-logo/` |
+| Simple logo (symbol + "Northside") | Where the full name is already clear | `logos/simple-logo/` |
 | Logo mark (symbol only) | Avatars, favicons, tight spaces | `logos/logo-mark/` |
 
-Each comes in **light** (for dark or colored backgrounds) and **dark** (for white or cream backgrounds).
+Each comes in **light** (white artwork, for dark or colored backgrounds) and **dark** (`#373A36` artwork, for white or cream backgrounds).
 
 **Clear space:** keep half the logo's height clear on every side.
 
@@ -46,26 +48,20 @@ Each comes in **light** (for dark or colored backgrounds) and **dark** (for whit
 - Add gradients, drop shadows, or other effects.
 - Place the logo on a busy or patterned background.
 
-## Sub-brands
-
-We are a "branded house," not a "house of brands." Ministries do not exist apart from Northside, so every ministry logo follows the same structure as the main Northside Christian Church logo.
-
-Kidside and NSM are the only exceptions. Each has its own brand guidelines.
-
 ## Colors
 
-| Name | Hex | RGB | CMYK | Pantone |
-| --- | --- | --- | --- | --- |
-| Green NCC (primary) | `#0E8291` | 14, 130, 145 | 82 / 28 / 36 / 11 | 3145 C |
-| Yellow NCC | `#FF9703` | 255, 151, 3 | 0 / 49 / 93 / 0 | 1375 C |
-| Dark Coral | `#CF6648` | 207, 102, 72 | 15 / 69 / 72 / 4 | unconfirmed |
-| Light Purple | `#C5CDE8` | 197, 205, 232 | 26 / 17 / 1 / 0 | 2706 C |
-| Cream | `#FAF1E8` | 250, 241, 232 | 2 / 6 / 10 / 0 | P 1-9 C |
-| Light Brown | `#A08A86` | 160, 138, 134 | 34 / 40 / 37 / 17 | 408 C |
+| Name | Group | Hex | RGB | CMYK | Pantone |
+| --- | --- | --- | --- | --- | --- |
+| Green NCC | Primary | `#0E8291` | 14, 130, 145 | 82 / 28 / 36 / 11 | 3145 C |
+| Yellow NCC | Primary | `#FF9703` | 255, 151, 3 | 0 / 49 / 93 / 0 | 1375 C |
+| Cream | Secondary | `#FAF1E8` | 250, 241, 232 | 2 / 6 / 10 / 0 | P 1-9 C |
+| Light Brown | Secondary | `#A08A86` | 160, 138, 134 | 34 / 40 / 37 / 17 | 408 C |
+| Light Purple | Secondary | `#C5CDE8` | 197, 205, 232 | 26 / 17 / 1 / 0 | 2706 C |
+| Dark Coral | Secondary | `#CF6648` | 207, 102, 72 | 15 / 69 / 72 / 4 | unconfirmed |
 
 Text on color: use white on Green NCC. Use dark text (`#1D1D1D`) on the other five. White on Dark Coral is fine for large or bold text only.
 
-The guidelines also define four gradients. Their values are not recorded here yet.
+The guidelines also show four gradients. They are soft blends of the brand colors with no fixed values. See page 20 of the guidelines PDF.
 
 ## Typography
 
@@ -86,6 +82,54 @@ Tips:
 5. Left-align text and do not hyphenate.
 6. Keep paragraphs to 45 to 75 words.
 7. Serif type suits long printed pieces. Sans serif suits screens.
+
+## Sub-brands
+
+We are a "branded house," not a "house of brands." Ministries do not exist apart from Northside, so ministry logos follow the main Northside Christian Church pattern.
+
+Three ministries have their own brand guides. Their logos are in `sub-brands/` and their full details are under `sub_brands` in `brand-kit.json`. All three use Gotham (Book, Medium, Bold, Black) for body text and follow the main photography and video guidance. All three share the same logo basics: half-height clear space, a 1 inch minimum for the full logo, and no stretching, strokes, or busy backgrounds.
+
+### Kidside
+
+| Color | Group | Hex |
+| --- | --- | --- |
+| Blue Kidside | Main | `#030040` |
+| Sea Kidside | Main | `#59BFD1` (confirm, see below) |
+| Grey 1 | Secondary | `#DADADA` |
+| Orange | Secondary | `#F05729` |
+| Green 1 | Secondary | `#96D142` |
+| Green 2 | Secondary | `#8CA65E` |
+
+- **Type:** Grobold (Bold only) for the logo type. Gotham for everything else.
+- **Logos:** `sub-brands/kidside/`. Full color, navy, black, and white versions, plus color wordmarks.
+- **Extra rule:** do not use parts of the logo on their own without approval from the Communications Team.
+- **Graphic element:** Kidside color waves, flowing shapes in the brand colors.
+- The Kidside guide prints the wrong hex for Sea Kidside. The value above was read from the swatch in the guide.
+
+### NSM (Northside Student Ministry)
+
+| Color | Group | Hex |
+| --- | --- | --- |
+| Blue NSM | Main | `#3730F2` |
+| Black NSM | Main | `#262626` |
+| Purple NSM | Secondary | `#8C5CF2` |
+| Yellow NSM | Secondary | `#F2E744` |
+| Pink NSM | Secondary | `#F291E2` |
+
+- **Type:** Bree (Regular, Semibold, Bold, Extrabold) for headlines and logo type. Set headlines in all caps, or title case if a long headline gets hard to read. Gotham for body text.
+- **Logos:** `sub-brands/nsm/`. Full name, horizontal, stacked, and logo mark, each in dark and light.
+
+### YA (Young Adults)
+
+| Rank | Hex |
+| --- | --- |
+| Primary | `#EB5812` (orange), `#FAF1E8` (cream), `#0540BE` (blue) |
+| Secondary | `#DFBA6C` (gold), `#373A36` (charcoal), `#4BA347` (green) |
+| Tertiary | `#01B4FE` (sky), `#FFB80A` (yellow) |
+
+- **Type:** Grako (Regular, Tall) for headlines and logo type. Set headlines in all caps, or title case if a long headline gets hard to read. Gotham for body text.
+- **Logos:** `sub-brands/young-adults/`. Only the orange profile image is here so far. The full YA logo files still need to be added.
+- The YA guide does not name its colors. The names in `brand-kit.json` are descriptive labels.
 
 ## Graphic elements
 
