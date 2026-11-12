@@ -28,7 +28,7 @@
   "colors": {
     "source": "Northside Brand Guidelines 2023-11-07, Colors section",
     "primary": {
-      "name": "Green NCC",
+      "name": "Teal NCC",
       "hex": "#0E8291",
       "rgb": [
         14,
@@ -48,7 +48,7 @@
     },
     "palette": [
       {
-        "name": "Yellow NCC",
+        "name": "Orange NCC",
         "hex": "#FF9703",
         "rgb": [
           255,
