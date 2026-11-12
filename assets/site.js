@@ -211,4 +211,10 @@
     const items = list.dataset.list.split(".").reduce((obj, key) => (obj ? obj[key] : null), kit);
     (items || []).forEach((item) => list.append(el("li", null, item)));
   });
+
+  // The sections above are built after load, so re-apply a #link once they exist.
+  if (location.hash.length > 1) {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView();
+  }
 })();
